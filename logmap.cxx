@@ -4,7 +4,9 @@
  * 
  */
 #include<iostream>
-#include<fstream>
+#include<fstream> //ofstream: Stream class to write on files
+		  //ifstream: Stream class to read from files
+		  //fstream: Stream class to both read and write from/to files.
 
 using namespace std;
 
@@ -15,7 +17,7 @@ int main(void){
 	
 	int Nskip = 100; //Number of iterations to skip
 	int Nend  = 200; //Number of total iterations
-	double A[Nend-Nskip]; // to carrz out Nskip steps before we print values. 
+	double A[Nend-Nskip]; // to carry out Nskip steps before we print values. 
   
   ofstream out ("output.dat");
 	
